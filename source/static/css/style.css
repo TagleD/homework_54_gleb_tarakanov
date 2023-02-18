@@ -25,6 +25,10 @@ body {
     padding-top: 15px;
 }
 
+.card-padding-bottom {
+    padding-bottom: 15px;
+}
+
 .small-text {
     font-size: 13px;
 }
