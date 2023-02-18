@@ -1,0 +1,62 @@
+[
+{
+  "model": "webapp.category",
+  "pk": 1,
+  "fields": {
+    "category": "rifles",
+    "description": "Оружие для дальнего боя. Имеет весомый урон, хорошую точность и отличную скорострельность. Не подходит для ближнего боя."
+  }
+},
+{
+  "model": "webapp.category",
+  "pk": 2,
+  "fields": {
+    "category": "melee",
+    "description": "Оружие для тех, кто уверен в своих движениях и технике. Может выручить в крайнем случае."
+  }
+},
+{
+  "model": "webapp.category",
+  "pk": 3,
+  "fields": {
+    "category": "sniper",
+    "description": "Оружие для самых холоднокровных бойцов, спопобное вычислить муху на другом конце Земли"
+  }
+},
+{
+  "model": "webapp.product",
+  "pk": 1,
+  "fields": {
+    "category": 1,
+    "name": "Нокота D5 Копперхед",
+    "description": "Универсальное оружие для универсальных солдат",
+    "added_at": "2023-02-18T14:33:41.488Z",
+    "coast": "750.00",
+    "image": "https://static.wikia.nocookie.net/cyberpunk8149/images/4/46/Нокота_D5_Копперхед.png/revision/latest/scale-to-width-down/699?cb=20201218095347&path-prefix=ru"
+  }
+},
+{
+  "model": "webapp.product",
+  "pk": 2,
+  "fields": {
+    "category": 1,
+    "name": "Псалом 10:6",
+    "description": "Дождем прольет Он на нечестивых горящие угли, огонь и серу; и палящий ветер — их доля из чаши",
+    "added_at": "2023-02-20T14:34:54.852Z",
+    "coast": "900.00",
+    "image": "https://static.wikia.nocookie.net/cyberpunk8149/images/7/70/Psalm_11_6.png/revision/latest/scale-to-width-down/699?cb=20201218134326&path-prefix=ru"
+  }
+},
+{
+  "model": "webapp.product",
+  "pk": 3,
+  "fields": {
+    "category": 3,
+    "name": "СВ-32 Град",
+    "description": "От этого оружия не спрячется никто.",
+    "added_at": "2022-02-18T14:38:59.893Z",
+    "coast": "999.00",
+    "image": "https://static.wikia.nocookie.net/cyberpunk8149/images/b/b3/SPT32_Grad_Database.png/revision/latest/scale-to-width-down/698?cb=20201229092227&path-prefix=ru"
+  }
+}
+]
