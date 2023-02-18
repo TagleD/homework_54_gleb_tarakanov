@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% block title %}Детальная информация{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <div class="row d-flex justify-content-center card-margin">
+            <div class="col-8 card text-bg-dark">
+                <div class="row card-padding">
+                    <div class="col-6">
+                        <img src="{{ product.image }}" class="img-fluid" alt="{{ product.name }}">
+                    </div>
+                    <div class="col-6">
+                        <h5>
+                            {{ product.name }}
+                        </h5>
+                        <p class="small-text">
+                            {{ product.category }}
+                        </p>
+                        <p>
+                            <b>
+                                Price: {{ product.coast }}$
+                            </b>
+                        </p>
+                        <p>
+                            {{ product.description }}
+                        </p>
+                        <p class="small-text">
+                            added: {{ product.added_at }}
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

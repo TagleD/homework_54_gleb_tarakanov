@@ -21,3 +21,10 @@ body {
     border-color: #1b7a72;
 }
 
+.card-padding {
+    padding-top: 15px;
+}
+
+.small-text {
+    font-size: 13px;
+}
