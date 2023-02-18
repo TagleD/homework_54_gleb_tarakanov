@@ -16,6 +16,10 @@ body {
     margin-top: 42px;
 }
 
+.card-margin-product {
+    margin-top: 20px;
+}
+
 .green {
     background: #1b7a72;
     border-color: #1b7a72;

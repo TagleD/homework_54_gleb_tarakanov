@@ -4,7 +4,7 @@ from django.shortcuts import render, redirect
 from webapp.models import Category
 
 
-def category_add(request: WSGIRequest):
+def category_add_view(request: WSGIRequest):
     if request.method == 'GET':
         return render(request, 'category_add.html')
     category_data = {
