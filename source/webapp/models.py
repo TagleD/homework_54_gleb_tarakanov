@@ -18,7 +18,7 @@ class Product(models.Model):
         null=False,
         blank=False,
         related_name='products',
-        on_delete=models.RESTRICT
+        on_delete=models.CASCADE
     )
     name = models.CharField(max_length=100, null=False, blank=False, verbose_name='Наименование')
     description = models.TextField(max_length=500, null=True, blank=False, verbose_name="Описание")

@@ -28,3 +28,26 @@ def products_add_view(request):
     }
     product = Product.objects.create(**product_data)
     return redirect('product_detail', pk=product.pk)
+
+
+def products_delete_view(request, pk):
+    product = Product.objects.get(pk=pk)
+    product.delete()
+    return redirect('products_view')
+
+
+def products_edit_view(request, pk):
+    product = get_object_or_404(Product, pk=pk)
+    if request.method == 'GET':
+        context = {
+            'product': product,
+            'categories': Category.objects.all()
+        }
+        return render(request, 'product_edit.html', context=context)
+    product.name = request.POST.get('name')
+    product.category = get_object_or_404(Category, category=request.POST.get('category'))
+    product.description = request.POST.get('description', None)
+    product.coast = request.POST.get('coast')
+    product.image = request.POST.get('image')
+    product.save()
+    return redirect('products_view')

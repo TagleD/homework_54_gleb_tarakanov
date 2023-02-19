@@ -1,3 +1,7 @@
+* {
+    font-family: 'Shantell Sans', cursive;
+}
+
 body {
     background: url("/static/img/back_2.jpg");
     background-size: cover;
@@ -35,4 +39,24 @@ body {
 
 .small-text {
     font-size: 13px;
+}
+
+.edit-buttons{
+    width: 70px;
+}
+
+.margin-right-red {
+    margin-right: 20px;
+}
+
+.margin-right-blue {
+    margin-right: 10px;
+}
+
+.padding-category {
+    padding-top: 7px;
+}
+
+.margin-bottom-buttons {
+    margin-bottom: 15px;
 }
