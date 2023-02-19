@@ -9,6 +9,9 @@
                 <form action="{% url 'product_edit' product.pk %}" method="post">
                     {% csrf_token %}
                     <div class="mb-3">
+                        <h2>Изменение товара №{{ product.pk }}</h2>
+                    </div>
+                    <div class="mb-3">
                         <label for="name" class="form-label">Название товара</label>
                         <input type="text" id="name" name="name" class="form-control"
                                value="{{ product.name }}">
@@ -33,7 +36,8 @@
                     </div>
                     <div class="mb-3">
                         <label for="description" class="form-label">Введите описание товара</label>
-                        <textarea id="description" name="description" rows="10" cols="53">{{ product.description }}</textarea>
+                        <textarea id="description" name="description" rows="10"
+                                  cols="53">{{ product.description }}</textarea>
                     </div>
                     <button type="submit" class="btn btn-primary green">Изменить</button>
                 </form>

@@ -1,6 +1,6 @@
 {% extends 'base.html' %}
 
-{% block title %}Добавление продукта{% endblock %}
+{% block title %}Добавление товара{% endblock %}
 
 {% block content %}
     <div class="container">
@@ -8,6 +8,9 @@
             <div class="col-6 card text-bg-dark card-padding card-padding-bottom">
                 <form action="{% url 'products_add' %}" method="post">
                     {% csrf_token %}
+                    <div class="mb-3">
+                        <h2>Добавление товара</h2>
+                    </div>
                     <div class="mb-3">
                         <label for="name" class="form-label">Название товара</label>
                         <input type="text" id="name" name="name" class="form-control"

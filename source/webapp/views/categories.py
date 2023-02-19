@@ -14,6 +14,7 @@ def category_add_view(request: WSGIRequest):
     Category.objects.create(**category_data)
     return redirect('categories_view')
 
+
 def categories_view(request):
     context = {'categories': Category.objects.all()}
     return render(request, 'categories.html', context=context)
@@ -34,4 +35,3 @@ def category_edit_view(request, pk):
     category.description = request.POST.get('description', None)
     category.save()
     return redirect('categories_view')
-
